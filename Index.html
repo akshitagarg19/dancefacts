@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #quiz {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #score {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Quiz Application</h1>
+    <div id="quiz">
+        <p id="question"></p>
+        <input type="text" id="answer" placeholder="Your answer">
+        <button onclick="submitAnswer()">Submit</button>
+        <p id="result"></p>
+        <p id="score"></p>
+    </div>
+
+    <script>
+        const questions = [
+            { question: 'What is the capital of France?', answer: 'Paris' },
+            { question: 'What is 2 + 2?', answer: '4'
